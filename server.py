@@ -6,7 +6,8 @@ from threading import Thread
 def computeSequenceSum(x):
     ans = 0
     for i in range(0, int(x)+1):
-        ans += i
+        for j in range(0, int(x)+1):
+            ans += i + j
     # print(ans)
     return ans
 
