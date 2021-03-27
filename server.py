@@ -60,6 +60,7 @@ def singleThreadedServer():
     while True:
         data = c.recv(1024).decode()
         data = str(data)
+        print(data)
         thread = Thread(target=computeSequenceSum, args=(data, ))
 
 
