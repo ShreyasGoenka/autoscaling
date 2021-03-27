@@ -15,7 +15,7 @@ def testClient():
 
 def loadServer(s, num_iters, val):
     for i in range(num_iters):
-        s.send(val.encode())
+        s.send(str(val).encode())
 
 
 def main():

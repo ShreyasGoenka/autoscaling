@@ -7,6 +7,7 @@ def computeSequenceSum(x):
     ans = 0
     for i in range(0, int(x)+1):
         ans += i
+    print(ans)
     return ans
 
 
