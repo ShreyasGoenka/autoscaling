@@ -31,7 +31,7 @@ def main():
     s.connect((server_ip, port))
 
     for i in range(60):
-        loadServer(s, 1000, 10000)
+        loadServer(s, 1000, "12345 ")
         time.sleep(1)
 
 if __name__ == "__main__":

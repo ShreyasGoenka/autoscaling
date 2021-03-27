@@ -59,9 +59,10 @@ def singleThreadedServer():
 
     while True:
         data = c.recv(1024).decode()
-        data = str(data)
+        data = str(data).split(' ')
         print(data)
-        thread = Thread(target=computeSequenceSum, args=(data, ))
+        for x in data:
+            thread = Thread(target=computeSequenceSum, args=(x, ))
 
 
 if __name__ == "__main__":
