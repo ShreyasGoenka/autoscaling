@@ -7,7 +7,7 @@ def computeSequenceSum(x):
     ans = 0
     for i in range(0, int(x)+1):
         ans += i
-    print(ans)
+    # print(ans)
     return ans
 
 
@@ -62,7 +62,7 @@ def singleThreadedServer():
     while True:
         data = c.recv(1024).decode()
         data = str(data).split(' ')
-        print(data)
+        # print(data)
 
         if len(data) <= 1:
             s.close()
