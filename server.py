@@ -9,7 +9,7 @@ print("server socket bound")
 s.listen()
 
 c, addr = s.accept()
-print("Got connection from". addr)
+print("Got connection from", addr)
 c.close()
 
 
